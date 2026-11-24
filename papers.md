@@ -42,12 +42,6 @@ Dimension reduction for probability distributions using Wasserstein geometry and
 
 Joint estimation of location and diffusion time on manifolds, with a focus on uniqueness, stability, and asymptotic inference.
 
-### Dissimilarity-based generalized Fréchet means
-
-*Ongoing project · Working title.*
-
-Consistency and asymptotic inference for generalized Fréchet means based on nonmetric dissimilarities, including Bray–Curtis dissimilarity for compositional data.
-
 ### Data-adaptive Fréchet means and regression
 
 *Ongoing project · Working title.*
@@ -57,9 +51,9 @@ Fréchet estimation and regression with cost functions learned from data, includ
 <!--
 수정 안내:
 - 출판 정보와 공저자 순서는 논문 또는 공식 기록에 맞추어 수정하세요.
-- 아래 세 연구는 최근 연구 논의를 요약한 임시 제목입니다.
-  Diffusion means / Dissimilarity-based GFM / Data-adaptive Fréchet means and regression.
-- 이 세 항목의 공저자 명단과 순서는 아직 확정하여 입력하지 않았습니다.
+- 아래 두 연구는 최근 연구 논의를 요약한 임시 제목입니다.
+  Diffusion means / Data-adaptive Fréchet means and regression.
+- 이 두 항목의 공저자 명단과 순서는 아직 확정하여 입력하지 않았습니다.
 - random cost function의 일반 이론은 현재 complex factor model 원고에 포함되므로,
   별도의 완성 원고로 중복 기재하지 않았습니다.
 - 공개한 원고가 생기면 해당 항목에 arXiv 또는 PDF 링크를 추가하세요.

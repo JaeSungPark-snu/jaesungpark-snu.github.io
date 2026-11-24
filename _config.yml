@@ -14,7 +14,7 @@ lang: "en"
 
 # 사진을 assets/img/profile.jpg에 업로드한 뒤 아래 빈칸을 채우세요.
 # 예: profile_image: "/assets/img/profile.jpg"
-profile_image: ""
+profile_image: "/assets/img/profile.jpg"
 profile_initials: "JP"
 
 # PDF를 assets/files/cv.pdf에 업로드한 뒤 아래 빈칸을 채우세요.

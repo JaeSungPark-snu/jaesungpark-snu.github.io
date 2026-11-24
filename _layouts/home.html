@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<section class="home-intro" aria-labelledby="profile-name">
+  <div class="intro-text">
+    <h1 id="profile-name">{{ site.title | escape }}</h1>
+    <p class="profile-role">{{ site.role | escape }}</p>
+    <div class="prose">{{ content }}</div>
+    <div class="contact-details">
+      {% if site.email and site.email != '' %}
+      <a href="mailto:{{ site.email | escape }}">{{ site.email | replace: '@', ' [at] ' | escape }}</a><br>
+      {% endif %}
+      {{ site.institute | escape }}<br>
+      {{ site.university | escape }}
+    </div>
+    <ul class="profile-links" aria-label="Profile links">
+      {% if site.github_url and site.github_url != '' %}<li><a href="{{ site.github_url | escape }}">GitHub</a></li>{% endif %}
+      {% if site.scholar_url and site.scholar_url != '' %}<li><a href="{{ site.scholar_url | escape }}">Google Scholar</a></li>{% endif %}
+      {% if site.orcid_url and site.orcid_url != '' %}<li><a href="{{ site.orcid_url | escape }}">ORCID</a></li>{% endif %}
+      <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
+    </ul>
+  </div>
+  <aside class="portrait">
+    {% if site.profile_image and site.profile_image != '' %}
+    <img src="{{ site.profile_image | relative_url }}" alt="Portrait of {{ site.title | escape }}" width="184" height="230">
+    {% else %}
+    <div class="portrait-placeholder" aria-label="{{ site.title | escape }} initials">
+      <span aria-hidden="true">{{ site.profile_initials | escape }}</span>
+    </div>
+    {% endif %}
+  </aside>
+</section>

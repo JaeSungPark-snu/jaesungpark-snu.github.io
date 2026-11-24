@@ -1,0 +1,10 @@
+- label: home
+  url: /
+- label: papers
+  url: /papers/
+- label: talks
+  url: /talks/
+- label: teaching
+  url: /teaching/
+- label: cv
+  url: /cv/

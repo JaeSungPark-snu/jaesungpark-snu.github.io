@@ -1,0 +1,45 @@
+# 이름, 연락처, 사진, 외부 링크는 이 파일에서 수정합니다.
+title: "Jaesung Park"
+name_ko: "박재성"
+role: "Postdoctoral Researcher"
+institute: "Institute for Data Innovation in Science"
+university: "Seoul National University"
+email: "wotjdddd@snu.ac.kr"
+description: "Jaesung Park — statistical inference for non-Euclidean data."
+
+# 다른 계정이나 프로젝트 저장소에 배포할 때만 변경합니다.
+url: "https://jaesungpark-snu.github.io"
+baseurl: ""
+lang: "en"
+
+# 사진을 assets/img/profile.jpg에 업로드한 뒤 아래 빈칸을 채우세요.
+# 예: profile_image: "/assets/img/profile.jpg"
+profile_image: ""
+profile_initials: "JP"
+
+# PDF를 assets/files/cv.pdf에 업로드한 뒤 아래 빈칸을 채우세요.
+# 예: cv_pdf: "/assets/files/cv.pdf"
+cv_pdf: ""
+
+github_url: "https://github.com/JaeSungPark-snu"
+# 링크를 넣으면 홈 화면에 자동으로 표시됩니다. 빈칸이면 표시하지 않습니다.
+scholar_url: ""
+orcid_url: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+timezone: Asia/Seoul
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - vendor
+  - scripts
+  - dist
+  - node_modules
+  - package.json
+  - package-lock.json

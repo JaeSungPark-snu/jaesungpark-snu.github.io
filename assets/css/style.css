@@ -1,0 +1,96 @@
+:root {
+  --ink: #26313c;
+  --muted: #66717e;
+  --blue: #315f8c;
+  --blue-dark: #1b4267;
+  --line: #e5e8ec;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--paper); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--blue); text-decoration: none; text-underline-offset: 4px; }
+a:hover { color: var(--blue-dark); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; border-radius: 2px; }
+img { max-width: 100%; }
+.site-shell { max-width: 880px; margin: 42px auto 32px; padding: 0 32px; }
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+.site-name { color: var(--ink); font-weight: 650; font-size: 17px; white-space: nowrap; }
+.site-name:hover { text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 19px; font-size: 15px; }
+nav a { color: var(--muted); padding: 4px 0; }
+nav a[aria-current="page"] { color: var(--ink); }
+main { min-height: 420px; }
+main:focus { outline: none; }
+h1, h2, h3 { line-height: 1.3; font-weight: 650; letter-spacing: -0.025em; }
+h1 { margin: 0 0 18px; font-size: 32px; }
+h2 { margin: 34px 0 13px; padding-bottom: 8px; border-bottom: 1px solid var(--line); font-size: 20px; }
+h3 { margin: 28px 0 8px; font-size: 17px; }
+p { margin: 0 0 18px; }
+ul, ol { margin: 0 0 20px; padding-left: 22px; }
+li { padding-left: 2px; }
+li + li { margin-top: 3px; }
+strong { font-weight: 650; }
+blockquote { margin: 20px 0; padding-left: 18px; color: var(--muted); border-left: 3px solid var(--line); }
+code { font-size: 0.9em; overflow-wrap: anywhere; }
+pre { padding: 16px; background: #f5f7f9; overflow-x: auto; }
+hr { margin: 28px 0; border: 0; border-top: 1px solid var(--line); }
+.home-intro { display: grid; grid-template-columns: minmax(0, 1fr) 184px; gap: 46px; align-items: start; }
+.intro-text { min-width: 0; }
+.intro-text h1 { margin-bottom: 4px; }
+.profile-role { margin-bottom: 22px; color: var(--muted); font-size: 15px; }
+.prose { overflow-wrap: break-word; }
+.prose > :last-child { margin-bottom: 0; }
+.contact-details { margin-top: 28px; color: var(--muted); font-size: 15px; line-height: 1.8; }
+.contact-details a { color: inherit; overflow-wrap: anywhere; }
+.profile-links { display: flex; flex-wrap: wrap; gap: 8px 0; list-style: none; padding: 0; margin: 17px 0 0; font-size: 15px; }
+.profile-links li { margin: 0; padding: 0; }
+.profile-links li + li::before { content: "·"; color: #929ca7; padding: 0 12px; }
+.portrait { width: 184px; aspect-ratio: 4 / 5; overflow: hidden; border: 1px solid var(--line); border-radius: 7px; }
+.portrait img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.portrait-placeholder { display: grid; place-items: center; width: 100%; height: 100%; background: #f4f6f8; color: #778999; }
+.portrait-placeholder span { font-size: 38px; font-weight: 400; letter-spacing: 0.035em; }
+.content-page { max-width: 760px; }
+.content-page > h1 { margin-bottom: 26px; }
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 58px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.site-footer a { color: inherit; }
+.skip-link { position: fixed; z-index: 2; top: 10px; left: 16px; padding: 8px 14px; color: var(--ink); background: white; border: 1px solid var(--line); transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+
+@media (max-width: 700px) {
+  .site-shell { margin-top: 25px; padding: 0 22px; }
+  .site-header { display: block; margin-bottom: 32px; padding-bottom: 12px; }
+  nav { gap: 3px 20px; margin-top: 8px; }
+  .home-intro { grid-template-columns: minmax(0, 1fr) 125px; gap: 24px; }
+  .portrait { width: 125px; }
+  .portrait-placeholder span { font-size: 30px; }
+  h1 { font-size: 29px; }
+}
+
+@media (max-width: 480px) {
+  .home-intro { display: flex; flex-direction: column; gap: 26px; }
+  .portrait { order: -1; width: 120px; }
+  .site-footer { margin-top: 42px; }
+}
+
+@media print {
+  .site-shell { max-width: none; margin: 0; padding: 0; }
+  nav, .skip-link, .site-footer { display: none; }
+  a { color: inherit; }
+  .site-header { margin-bottom: 24px; }
+  main { min-height: 0; }
+}

@@ -22,7 +22,7 @@ layout: default
   </div>
   <aside class="portrait">
     {% if site.profile_image and site.profile_image != '' %}
-    <img src="{{ site.profile_image | relative_url }}" alt="Portrait of {{ site.title | escape }}" width="1536" height="2048">
+    <img src="{{ site.profile_image | relative_url }}?v={{ site.time | date: '%s' }}" alt="Portrait of {{ site.title | escape }}" width="1536" height="2048">
     {% else %}
     <div class="portrait-placeholder" aria-label="{{ site.title | escape }} initials">
       <span aria-hidden="true">{{ site.profile_initials | escape }}</span>

@@ -94,3 +94,14 @@ hr { margin: 28px 0; border: 0; border-top: 1px solid var(--line); }
   .site-header { margin-bottom: 24px; }
   main { min-height: 0; }
 }
+
+/* Academic history tables on the home page */
+.academic-section { margin-top: 30px; }
+.academic-list { list-style: none; padding: 0; margin: 0; }
+.academic-item { display: grid; grid-template-columns: 165px minmax(0, 1fr); gap: 18px; margin: 0 0 17px; padding: 0; line-height: 1.55; }
+.academic-period { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+.academic-note { font-size: 14px; color: var(--muted); }
+@media (max-width: 580px) {
+  .academic-item { grid-template-columns: 1fr; gap: 2px; }
+  .academic-period { font-size: 14px; }
+}

@@ -1,5 +1,4 @@
-# Education on the home page.
-# The graduate degree was an integrated master's/doctoral program.
+# Academic history on the home page. Add or edit entries here.
 - period: "Mar 2019–Aug 2025"
   degree: "Ph.D. in Statistics"
   department: "Department of Statistics"
@@ -8,12 +7,18 @@
   advisor_url: "https://scholar.google.com/citations?user=WYEkUW8AAAAJ&hl=en"
   note: "Integrated M.S.–Ph.D. program"
 
-# The university and major for the B.S. are not yet confirmed.
-# Fill in institution and department below after confirmation.
 - period: "Mar 2015–Feb 2019"
-  degree: "B.S."
+  degree: "B.S. in Mathematical Sciences"
+  department: "Department of Mathematical Sciences"
+  institution: "Seoul National University"
+  advisor: ""
+  advisor_url: ""
+  note: "Double major in Statistics"
+
+- period: "Mar 2012–Feb 2015"
+  degree: "High School"
   department: ""
-  institution: ""
+  institution: "Gyeonggi Science High School for the Gifted"
   advisor: ""
   advisor_url: ""
   note: ""

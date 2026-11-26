@@ -1,0 +1,19 @@
+# Education on the home page.
+# The graduate degree was an integrated master's/doctoral program.
+- period: "Mar 2019–Aug 2025"
+  degree: "Ph.D. in Statistics"
+  department: "Department of Statistics"
+  institution: "Seoul National University"
+  advisor: "Sungkyu Jung"
+  advisor_url: "https://scholar.google.com/citations?user=WYEkUW8AAAAJ&hl=en"
+  note: "Integrated M.S.–Ph.D. program"
+
+# The university and major for the B.S. are not yet confirmed.
+# Fill in institution and department below after confirmation.
+- period: "Mar 2015–Feb 2019"
+  degree: "B.S."
+  department: ""
+  institution: ""
+  advisor: ""
+  advisor_url: ""
+  note: ""

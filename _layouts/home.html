@@ -38,7 +38,7 @@ layout: default
       <span class="academic-period">{{ item.period | escape }}</span>
       <div><strong>{{ item.role | escape }}</strong><br>
       {% if item.department and item.department != '' %}{{ item.department | escape }}, {% endif %}{{ item.institution | escape }}
-      {% if item.supervisor and item.supervisor != '' %}<br><span class="academic-note">Supervisor: {% if item.supervisor_url and item.supervisor_url != '' %}<a href="{{ item.supervisor_url | escape }}">{{ item.supervisor | escape }}</a>{% else %}{{ item.supervisor | escape }}{% endif %}</span>{% endif %}
+      {% if item.mentor and item.mentor != '' %}<br><span class="academic-note">Mentor: {% if item.mentor_url and item.mentor_url != '' %}<a href="{{ item.mentor_url | escape }}">{{ item.mentor | escape }}</a>{% else %}{{ item.mentor | escape }}{% endif %}</span>{% endif %}
       {% if item.note and item.note != '' %}<br><span class="academic-note">{{ item.note | escape }}</span>{% endif %}
       </div>
     </li>

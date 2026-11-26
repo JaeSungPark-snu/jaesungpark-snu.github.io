@@ -1,9 +1,9 @@
 # Edit these entries to update visiting appointments.
 - period: "Sep–Dec 2026"
-  role: "Invited Participant"
-  department: "Geometric Statistics Trimester Program"
-  institution: "Hausdorff Institute for Mathematics (HIM), Bonn"
-  note: "Research visit during the HIM Dual Trimester Program"
+  role: "Visiting Researcher"
+  department: ""
+  institution: "Hausdorff Research Institute for Mathematics (HIM), Bonn"
+  note: "Invited Participant, Dual Trimester Program: Geometric Statistics — Theory, Application, and Computation"
 
 - period: "25 Jun–25 Jul 2025"
   role: "Visiting Researcher"

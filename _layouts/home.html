@@ -17,7 +17,6 @@ layout: default
       {% if site.github_url and site.github_url != '' %}<li><a href="{{ site.github_url | escape }}">GitHub</a></li>{% endif %}
       {% if site.scholar_url and site.scholar_url != '' %}<li><a href="{{ site.scholar_url | escape }}">Google Scholar</a></li>{% endif %}
       {% if site.orcid_url and site.orcid_url != '' %}<li><a href="{{ site.orcid_url | escape }}">ORCID</a></li>{% endif %}
-      <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
     </ul>
   </div>
   <aside class="portrait">
@@ -29,4 +28,52 @@ layout: default
     </div>
     {% endif %}
   </aside>
+</section>
+
+<section class="academic-section" aria-labelledby="positions-heading">
+  <h2 id="positions-heading">Academic Positions</h2>
+  <ul class="academic-list">
+  {% for item in site.data.positions %}
+    <li class="academic-item">
+      <span class="academic-period">{{ item.period | escape }}</span>
+      <div><strong>{{ item.role | escape }}</strong><br>
+      {% if item.department and item.department != '' %}{{ item.department | escape }}, {% endif %}{{ item.institution | escape }}
+      {% if item.supervisor and item.supervisor != '' %}<br><span class="academic-note">Supervisor: {% if item.supervisor_url and item.supervisor_url != '' %}<a href="{{ item.supervisor_url | escape }}">{{ item.supervisor | escape }}</a>{% else %}{{ item.supervisor | escape }}{% endif %}</span>{% endif %}
+      {% if item.note and item.note != '' %}<br><span class="academic-note">{{ item.note | escape }}</span>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section class="academic-section" aria-labelledby="visiting-heading">
+  <h2 id="visiting-heading">Visiting Appointments</h2>
+  <ul class="academic-list">
+  {% for item in site.data.visiting %}
+    <li class="academic-item">
+      <span class="academic-period">{{ item.period | escape }}</span>
+      <div><strong>{{ item.role | escape }}</strong><br>
+      {% if item.department and item.department != '' %}{{ item.department | escape }}, {% endif %}{{ item.institution | escape }}
+      {% if item.note and item.note != '' %}<br><span class="academic-note">{{ item.note | escape }}</span>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section class="academic-section" aria-labelledby="education-heading">
+  <h2 id="education-heading">Education</h2>
+  <ul class="academic-list">
+  {% for item in site.data.education %}
+    <li class="academic-item">
+      <span class="academic-period">{{ item.period | escape }}</span>
+      <div><strong>{{ item.degree | escape }}</strong>
+      {% if item.department and item.department != '' %}<br>{{ item.department | escape }}{% endif %}
+      {% if item.institution and item.institution != '' %}, {{ item.institution | escape }}{% endif %}
+      {% if item.advisor and item.advisor != '' %}<br><span class="academic-note">Advisor: {% if item.advisor_url and item.advisor_url != '' %}<a href="{{ item.advisor_url | escape }}">{{ item.advisor | escape }}</a>{% else %}{{ item.advisor | escape }}{% endif %}</span>{% endif %}
+      {% if item.note and item.note != '' %}<br><span class="academic-note">{{ item.note | escape }}</span>{% endif %}
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
 </section>
